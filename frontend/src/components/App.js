@@ -43,15 +43,18 @@ function App() {
    * Получение информации о пользователе и исходных карточек при открытии страницы
    */
   React.useEffect(() => {
-    api.getUserInfo().then(setCurrentUser).catch(console.error);
+    if (isLoggedIn) {
+      api.getUserInfo().then(setCurrentUser).catch(console.error);
 
-    api
-      .getInitialCards()
-      .then((res) => {
-        setCards(res);
-      })
-      .catch(console.error);
-  }, []);
+      api
+        .getInitialCards()
+        .then((res) => {
+          setCards(res);
+        })
+        .catch(console.error);
+    }
+
+  }, [isLoggedIn]);
 
   // Функции открытия/закрытия попапов
   function handleEditAvatarClick() {
@@ -148,7 +151,8 @@ function App() {
       auth
         .checkToken(token)
         .then((res) => {
-          setEmail(res.data.email);
+          setEmail(res.email);
+          api.setToken(token);
           setIsLoggedIn(true);
           navigate("/");
         })

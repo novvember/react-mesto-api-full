@@ -14,6 +14,10 @@ class Api {
     this._headers = headers;
   }
 
+  setToken(token) {
+    this._headers.authorization = `Bearer ${token}`;
+  }
+
   /**
    * Получает данные текущего пользователя
    * @returns {Promise} Промис с ответом сервера: объект текущего пользователя
