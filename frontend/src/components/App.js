@@ -150,6 +150,7 @@ function App() {
       auth
         .checkToken(token)
         .then((res) => {
+          // setCurrentUser(res);
           api.setToken(token);
           setIsLoggedIn(true);
           navigate("/");

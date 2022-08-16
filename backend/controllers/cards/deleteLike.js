@@ -8,7 +8,7 @@ async function deleteLike(req, res, next) {
       req.params.cardId,
       { $pull: { likes: userId } }, // убрать _id из массива, если он есть
       { new: true },
-    );
+    ).populate('owner').populate('likes');
 
     if (!card) {
       throw new NotFoundError('Карточка не найдена');

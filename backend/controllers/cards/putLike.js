@@ -8,7 +8,7 @@ async function putLike(req, res, next) {
       req.params.cardId,
       { $addToSet: { likes: userId } }, // добавить _id в массив, если его там нет
       { new: true },
-    );
+    ).populate('owner').populate('likes');
 
     if (!card) {
       throw new NotFoundError('Карточка не найдена');

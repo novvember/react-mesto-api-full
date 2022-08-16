@@ -6,6 +6,8 @@ async function createCard(req, res, next) {
     const { name, link } = req.body;
     const ownerId = req.user._id;
     const card = await Card.create({ name, link, owner: ownerId });
+    await card.populate('owner');
+    await card.populate('likes');
     res.status(201).send(card);
   } catch (err) {
     if (err.name === 'CastError' || err.name === 'ValidationError') {
