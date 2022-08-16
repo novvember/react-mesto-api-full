@@ -31,11 +31,11 @@ mongoose
 
 app.use(limiter);
 
+app.use(cors());
+
 app.use(requestLogger);
 
 app.use(helmet());
-
-app.use(cors());
 
 app.use(routes);
 
