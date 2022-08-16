@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const { errors } = require('celebrate');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
-const cors = require('cors')
+const cors = require('cors');
 
 const { routes } = require('./routes');
 const { handleError } = require('./middlewares/handleError');
