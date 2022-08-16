@@ -3,7 +3,7 @@
  */
 
 export const apiConfig = {
-  baseUrl: `http://localhost:3000`,
+  baseUrl: `https://api.mesto.novvember.nomoredomains.sbs`,
   headers: {
     "Content-Type": "application/json",
   },
