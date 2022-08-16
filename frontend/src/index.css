@@ -1,0 +1,86 @@
+/* Файл normalize.css */
+@import url(./vendor/normalize.css);
+
+/* Шрифт Inter*/
+@import url(./vendor/fonts/inter-web/inter.css);
+
+/* Блок Page */
+@import url(./blocks/page/page.css);
+
+/* Контейнер страницы */
+@import url(./blocks/content/content.css);
+@import url(./blocks/content/__element/content__element.css);
+@import url(./blocks/content/__element/_type/content__element_type_header.css);
+
+/* Header */
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__menu-button/header__menu-button.css);
+@import url(./blocks/header/__menu-button/_opened/header__menu-button_opened.css);
+@import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__menu/_opened/header__menu_opened.css);
+@import url(./blocks/header/__menu-list/header__menu-list.css);
+@import url(./blocks/header/__menu-item/header__menu-item.css);
+
+/* Profile */
+@import url(./blocks/profile/profile.css);
+@import url(./blocks/profile/__avatar/profile__avatar.css);
+@import url(./blocks/profile/__avatar-image/profile__avatar-image.css);
+@import url(./blocks/profile/__avatar-button/profile__avatar-button.css);
+@import url(./blocks/profile/__info/profile__info.css);
+@import url(./blocks/profile/__name-block/profile__name-block.css);
+@import url(./blocks/profile/__name/profile__name.css);
+@import url(./blocks/profile/__button/profile__button.css);
+@import url(./blocks/profile/__button/_type/profile__button_type_edit.css);
+@import url(./blocks/profile/__button/_type/profile__button_type_add.css);
+@import url(./blocks/profile/__job/profile__job.css);
+
+/* Cards */
+@import url(./blocks/cards/cards.css);
+
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/card/__description/card__description.css);
+@import url(./blocks/card/__title/card__title.css);
+@import url(./blocks/card/__like/card__like.css);
+@import url(./blocks/card/__like-button/card__like-button.css);
+@import url(./blocks/card/__like-count/card__like-count.css);
+@import url(./blocks/card/__like-button/_active/card__like-button_active.css);
+@import url(./blocks/card/__delete-button/card__detele-button.css);
+
+/* Footer */
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__copyright/footer__copyright.css);
+
+/* Popups */
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_opened/popup_opened.css);
+@import url(./blocks/popup/__container/popup__container.css);
+@import url(./blocks/popup/__title/popup__title.css);
+@import url(./blocks/popup/__form/popup__form.css);
+@import url(./blocks/popup/__field/popup__field.css);
+@import url(./blocks/popup/__input/popup__input.css);
+@import url(./blocks/popup/__input/_type/popup__input_type_error.css);
+@import url(./blocks/popup/__input-error/popup__input-error.css);
+@import url(./blocks/popup/__input-error/_visible/popup__input-error_visible.css);
+@import url(./blocks/popup/__cancel-button/popup__cancel-button.css);
+@import url(./blocks/popup/__save-button/popup__save-button.css);
+@import url(./blocks/popup/__save-button/_disabled/popup__save-button_disabled.css);
+
+@import url(./blocks/popup/_type/popup_type_image.css);
+@import url(./blocks/popup/__image-container/popup__image-container.css);
+@import url(./blocks/popup/__image/popup__image.css);
+@import url(./blocks/popup/__image-caption/popup__image-caption.css);
+
+@import url(./blocks/popup/__info-message/popup__info-message.css);
+@import url(./blocks/popup/__info-message/_type/popup__info-message_type_fail.css);
+@import url(./blocks/popup/__info-message/_type/popup__info-message_type_success.css);
+
+/* Login */
+@import url(./blocks/login/login.css);
+@import url(./blocks/login/__title/login__title.css);
+@import url(./blocks/login/__form/login__form.css);
+@import url(./blocks/login/__input/login__input.css);
+@import url(./blocks/login/__submit-button/login__submit-button.css);
+@import url(./blocks/login/__extra-text/login__extra-text.css);
+@import url(./blocks/login/__link/login__link.css);

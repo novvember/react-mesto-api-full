@@ -1,0 +1,18 @@
+.header {
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  /* Расположение элементов */
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-areas: "logo menu";
+  justify-items: end;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header_wrappable {
+    /* Сворачивающееся меню */
+    grid-template-areas:
+      "menu menu"
+      "logo button";
+  }
+}

@@ -1,0 +1,20 @@
+.profile__job {
+  margin: 0; /* Сброс стандартного стиля */
+  /* Параметры шрифта */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.22;
+  /* Запрет переноса и переполнения текста */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .profile__job {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+

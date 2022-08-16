@@ -1,0 +1,17 @@
+.profile__info {
+  /* Единственный элемент из соседних, котором можно уширяться */
+  flex-grow: 1;
+  max-width: calc(100% - 120px - 150px - 50px); /* Ограничение по ширине */
+  /* Расположение элементов внутри */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen  and (max-width: 768px) {
+  .profile__info {
+    max-width: 100%; /* На неболших экранах ширина полностью */
+    gap: 8px;
+    margin-bottom: 11px;
+  }
+}

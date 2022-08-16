@@ -1,0 +1,22 @@
+.header__logo {
+  /* Размеры */
+  width: 142px;
+  height: 33px;
+  object-fit: contain;
+  object-position: left;
+  /* Расположение */
+  display: block;
+  margin: 45px 0 37px;
+  grid-area: logo;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    /* Размеры */
+    width: 104px;
+    height: 25px;
+    /* Расположение */
+    margin: 28px 0 27px;
+    margin-left: 30px;
+  }
+}

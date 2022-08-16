@@ -1,0 +1,19 @@
+.header__menu-item {
+  /* Сброс стилей для любых элементов*/
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  /* Анимация */
+  transition: opacity 0.3s;
+}
+
+.header__menu-item:is(a, button) {
+  cursor: pointer;
+}
+
+.header__menu-item:is(a, button):hover {
+  opacity: 0.6;
+}

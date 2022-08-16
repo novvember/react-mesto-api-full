@@ -1,0 +1,6 @@
+.card__description {
+  padding: 25px 21px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Выравнивает кнопку лайка по строке текста */
+}

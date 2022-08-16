@@ -1,0 +1,13 @@
+.card__image {
+  width: 100%;
+  /* aspect-ratio: 1;  Не поддерживается Практикумом */
+  height: 282px;
+  object-fit: cover;
+  object-position: center;
+  background-color: #111;
+  transition: opacity .3s;
+}
+
+.card__image:hover {
+  opacity: .9;
+}

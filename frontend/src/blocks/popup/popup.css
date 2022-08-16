@@ -1,0 +1,19 @@
+.popup {
+  /* Положение поверх всей страницы */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Размеры на весь экран */
+  width: 100%;
+  height: 100%;
+  /* Позиционирование внутри элемента по центру */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Фон */
+  background-color: rgba(0, 0, 0, .5);
+  /* Появление при открытии */
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s;
+}

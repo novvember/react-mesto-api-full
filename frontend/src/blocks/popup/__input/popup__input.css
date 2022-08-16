@@ -1,0 +1,21 @@
+.popup__input {
+  border: 0; /* Сброс стандартного стиля */
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  padding-bottom: 13px;
+  /* Параметры шрифта внутри поля */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+}
+
+.popup__input::placeholder {
+  color: #C4C4C4;
+  font-weight: 400;
+}
+
+.popup__input:focus {
+  outline-offset: 3px;
+}
+

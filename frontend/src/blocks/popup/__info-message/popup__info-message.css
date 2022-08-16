@@ -1,0 +1,26 @@
+.popup__info-message {
+  margin: 26px 0 23px;
+  padding-top: 152px;
+  /* Text */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  /* Иконка */
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 120px auto;
+}
+
+@media (max-width: 768px) {
+  .popup__info-message {
+    margin-block: 25px;
+    padding-top: 160px;
+    /* Text */
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

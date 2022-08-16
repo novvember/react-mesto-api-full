@@ -1,0 +1,41 @@
+.header__menu-list {
+  /* Сброс стилей */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* Расположение элементов внутри */
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 24px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  /* Расположение в блоке */
+  grid-area: menu;
+  /* Text */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .header_wrappable .header__menu-list {
+    /* Размеры */
+    margin: 0;
+    width: 100%;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #545454;
+    /* Расположение элементов внутри */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    /* Текст */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,7 @@
+/* Хедер на маленьких эканах ведет себя по-другому: без полей */
+@media screen and (max-width: 768px) {
+  .content__element_type_header {
+    width: 100%; /* Нет полей */
+    box-sizing: border-box;
+  }
+}

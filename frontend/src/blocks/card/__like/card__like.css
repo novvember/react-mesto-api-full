@@ -1,0 +1,9 @@
+.card__like {
+  min-width: 22px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0; /* Не дает сжиматься при длинном текста */
+}

@@ -1,0 +1,21 @@
+.header__menu {
+  grid-area: menu;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_wrappable .header__menu {
+    margin: 0;
+    width: 100%;
+    /* Скрытие меню */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+}

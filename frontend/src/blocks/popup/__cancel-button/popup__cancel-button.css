@@ -1,0 +1,33 @@
+.popup__cancel-button {
+  /* Позиционирование вне формы */
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(calc(100% + 8px), calc(-100% - 8px));
+  /* Размеры кнопки */
+  width: 32px;
+  height: 32px;
+  /* Внешний вид */
+  cursor: pointer;
+  border: 0;
+  /* Фоновое изображение */
+  background-color: transparent;
+  background-image: url(../../../images/icon__close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* Анимация при наведении */
+  transition: opacity .2s;
+}
+
+.popup__cancel-button:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__cancel-button {
+    width: 20px;
+    height: 20px;
+    transform: translateY(calc(-100% + -16px)); /* Перенос кнопки в другое место */
+  }
+}
