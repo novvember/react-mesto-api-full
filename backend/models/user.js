@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 
+const { LINK } = require('../utils/patterns');
+
 const userSchema = new mongoose.Schema(
   {
     email: {
@@ -30,8 +32,9 @@ const userSchema = new mongoose.Schema(
     },
     avatar: {
       type: String,
-      default: 'https://pictures.s3.yandex.net/resources/jacques-cousteau_1604399756.png',
-      validate: /https?:\/\/(www)?[0-9a-z\-._~:/?#[\]@!$&'()*+,;=]+#?$/i,
+      default:
+        'https://pictures.s3.yandex.net/resources/jacques-cousteau_1604399756.png',
+      validate: LINK,
     },
   },
   {

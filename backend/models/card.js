@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+const { LINK } = require('../utils/patterns');
+
 const cardSchema = new mongoose.Schema(
   {
     name: {
@@ -11,7 +13,7 @@ const cardSchema = new mongoose.Schema(
     link: {
       type: String,
       required: true,
-      validate: /https?:\/\/(www)?[0-9a-z\-._~:/?#[\]@!$&'()*+,;=]+#?$/i,
+      validate: LINK,
     },
     owner: {
       type: mongoose.Schema.Types.ObjectId,

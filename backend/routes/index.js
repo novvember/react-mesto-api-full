@@ -6,6 +6,7 @@ const { cards } = require('./cards');
 const { login, createUser } = require('../controllers/users');
 const { auth } = require('../middlewares/auth');
 const { NotFoundError } = require('../errors');
+const { LINK } = require('../utils/patterns');
 
 const routes = express.Router();
 
@@ -19,7 +20,7 @@ routes.post(
       password: Joi.string().required(),
       name: Joi.string().min(2).max(30),
       about: Joi.string().min(2).max(30),
-      avatar: Joi.string().regex(/https?:\/\/(www)?[0-9a-z\-._~:/?#[\]@!$&'()*+,;=]+#?$/i),
+      avatar: Joi.string().regex(LINK),
     }),
   }),
   createUser,

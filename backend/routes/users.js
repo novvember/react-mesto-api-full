@@ -2,6 +2,7 @@ const express = require('express');
 const { celebrate, Joi } = require('celebrate');
 
 const { validateObjectId } = require('../utils/validateObjectId');
+const { LINK } = require('../utils/patterns');
 
 const {
   getAllUsers,
@@ -41,9 +42,7 @@ users.patch(
   '/me/avatar',
   celebrate({
     body: Joi.object().keys({
-      avatar: Joi.string().regex(
-        /https?:\/\/(www)?[0-9a-z\-._~:/?#[\]@!$&'()*+,;=]+#?$/i,
-      ),
+      avatar: Joi.string().regex(LINK),
     }),
   }),
   updateAvatar,

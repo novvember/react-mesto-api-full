@@ -2,6 +2,7 @@ const express = require('express');
 const { celebrate, Joi } = require('celebrate');
 
 const { validateObjectId } = require('../utils/validateObjectId');
+const { LINK } = require('../utils/patterns');
 
 const {
   getAllCards,
@@ -26,9 +27,7 @@ cards.post(
   celebrate({
     body: Joi.object().keys({
       name: Joi.string().required().min(2).max(30),
-      link: Joi.string()
-        .required()
-        .regex(/https?:\/\/(www)?[0-9a-z\-._~:/?#[\]@!$&'()*+,;=]+#?$/i),
+      link: Joi.string().required().regex(LINK),
     }),
   }),
   createCard,
