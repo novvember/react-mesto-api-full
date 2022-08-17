@@ -39,6 +39,15 @@ app.use(requestLogger);
 
 app.use(helmet());
 
+// Краш-тест сервера
+// (вызывает принудительное падение сервера
+// для проверки автоматического перезапуска)
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 app.use(routes);
 
 app.use(errorLogger);
