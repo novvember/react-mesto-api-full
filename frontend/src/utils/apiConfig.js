@@ -3,7 +3,7 @@
  */
 
 export const apiConfig = {
-  baseUrl: `https://api.mesto.novvember.nomoredomains.sbs`,
+  baseUrl: `https://reac-mesto-api.onrender.com`,
   headers: {
     "Content-Type": "application/json",
   },
