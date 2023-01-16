@@ -1,12 +1,12 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Header from "./Header";
-import auth from "../utils/auth";
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import Header from './Header';
+import auth from '../utils/auth';
 
 function Register({ handleShowInfoMessage }) {
   const defaultValues = {
-    email: "",
-    password: "",
+    email: '',
+    password: '',
   };
 
   const [inputs, setInputs] = React.useState(defaultValues);
@@ -25,14 +25,14 @@ function Register({ handleShowInfoMessage }) {
       .register(inputs)
       .then((res) => {
         handleShowInfoMessage({
-          text: "Вы успешно зарегистрировались!",
+          text: 'Вы успешно зарегистрировались!',
           isSuccess: true,
         });
         resetForm();
-        navigate("/sign-in");
+        navigate('/sign-in');
       })
       .catch((err) => {
-        const text = err.message || "Что-то пошло не так! Попробуйте еще раз.";
+        const text = err.message || 'Что-то пошло не так! Попробуйте еще раз.';
         handleShowInfoMessage({
           text: text,
           isSuccess: false,
@@ -79,7 +79,7 @@ function Register({ handleShowInfoMessage }) {
             </button>
           </form>
           <p className="login__extra-text">
-            Уже зарегистрированы?{" "}
+            Уже зарегистрированы?{' '}
             <Link className="login__link" to="/sign-in">
               Войти
             </Link>

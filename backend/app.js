@@ -11,8 +11,10 @@ const { routes } = require('./routes');
 const { handleError } = require('./middlewares/handleError');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3000 } = process.env;
-const DATABASE_URL = 'mongodb://127.0.0.1:27017/mestodb';
+const {
+  PORT = 3000,
+  DATABASE_URL = 'mongodb://127.0.0.1:27017/mestodb',
+} = process.env;
 
 const app = express();
 
